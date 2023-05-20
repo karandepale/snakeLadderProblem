@@ -10,6 +10,7 @@ namespace SnakeLadder
             int finalPosition = 100;
             Console.WriteLine("Start Position is: " + currentPosition);
             Random random = new Random();
+            int diceRolls = 0;
 
             while (currentPosition < finalPosition)
             {
@@ -40,10 +41,12 @@ namespace SnakeLadder
                         break;
                 }
 
+                diceRolls++;
                 Console.WriteLine("Current Position: " + currentPosition);
             }
 
             Console.WriteLine("Congratulations! The player has reached the winning position.");
+            Console.WriteLine("Number of dice rolls: " + diceRolls);
         }
     }
 }
