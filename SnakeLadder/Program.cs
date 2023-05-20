@@ -10,7 +10,9 @@ namespace SnakeLadder
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to Snake Ladder Program...");
+            int currentPosition = 0;
+            int finalPosition = 100;
+            Console.WriteLine("Start Position is:" + currentPosition);
         }
     }
 }
