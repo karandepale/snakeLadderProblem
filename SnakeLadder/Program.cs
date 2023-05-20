@@ -27,7 +27,9 @@ namespace SnakeLadder
                         break;
                     case 1: // Ladder
                         Console.WriteLine("Ladder. The player moves ahead by " + dieRoll + " positions.");
-                        currentPosition += dieRoll;
+
+                        if (currentPosition + dieRoll <= finalPosition)
+                            currentPosition += dieRoll;
                         break;
                     case 2: // Snake
                         Console.WriteLine("Snake. The player moves behind by " + dieRoll + " positions.");
